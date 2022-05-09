@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://kit.fontawesome.com/4764867ec8.js" crossorigin="anonymous"></script>
+    <script src="./asset/jquery/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            // $("#header").load("./html/header.html")
+            $("#footer").load("./html/footer.html")
+        })
+    </script>
+    <link rel="icon" href="./asset/image/icon.ico">
+    <title>Boss And Maid - Trang chủ</title>
+</head>
+<body>
+    <!-- <div id="header"></div> -->
+    <header class="header">
+        <div class="header__top">
+            <ul class="header__top__list">
+                <li class="list-item no-hover">Chào mừng bạn đến với shop thức ăn chó mèo</li>
+                <li class="list-item">
+                    <span class="no-hover">Kết nối</span>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="header__top__list">
+                <li class="list-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <a href="./html/info.html">
+                        Giới thiệu
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="./html/register.html">Đăng ký</a>
+                </li>
+                <li class="list-item">
+                    <a href="./html/logIn.html">Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__container">
+            <div class="header__container__logo-nav d-flex justify-content-between align-items-center">
+                <a href="./index.html">
+                    <img src="./asset/image/logo-2.png" alt="logo" class="logo">
+                </a>
+                <nav class="nav">
+                    <a href="./index.html" class="nav-item">Trang chủ</a>
+                    <a href="./html/productPage.html" class="nav-item">Sản phẩm</a>
+                    <a href="./html/contactPage.html" class="nav-item">Liên hệ</a>
+                </nav>
+            </div>
+            <div class="header__container__search-cart d-flex align-items-center">
+                <div class="search">
+                    <input type="text" class="search-input" placeholder="Tìm kiếm">
+                    <button class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="cart">
+                    <a href="./html/cartPage.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="product__wrapper new-products">
+            <div class="product__title">
+                <h3>Sản phẩm mới</h3>
+            </div>
+            <div class="list__items d-flex flex-wrap"></div>
+        </div>
+        <div class="product__wrapper best-selling">
+            <div class="product__title">
+                <h3>Sản phẩm bán chạy</h3>
+            </div>
+            <div class="list__items d-flex flex-wrap"></div>
+        </div>
+        <div class="product__wrapper dog-food">
+            <div class="product__title">
+                <h3>Thức ăn cho chó</h3>
+            </div>
+            <div class="list__items d-flex flex-wrap"></div>
+        </div>
+        <div class="product__wrapper cat-food">
+            <div class="product__title">
+                <h3>Thức ăn cho mèo</h3>
+            </div>
+            <div class="list__items d-flex flex-wrap"></div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script type="module" src="./JS/index.js"></script>
+</body>
+</html>

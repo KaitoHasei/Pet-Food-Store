@@ -27,7 +27,7 @@ const mapData = (element, data) => {
       (i) =>
         `
     <a
-      href='./productDetail.html?id=${i?.id}'
+      href='./html/productDetail.html?id=${i?.id}'
       class="col-md-3 col-sp col-xs-12 col-sm-6 item"
       onclick="return handleClickProduct(${i?.id})"
     >
