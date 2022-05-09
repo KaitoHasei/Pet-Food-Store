@@ -1,0 +1,126 @@
+.product-page {
+    display: flex;
+}
+
+.sidebar .sidebar__form {
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.sidebar .sidebar__form .sidebar__title {
+    text-align: center;
+}
+
+.sidebar .sidebar__form .sidebar__title h4 {
+    padding: 10px;
+    font-size: 2rem;
+    background-color: var(--jelly-bean);
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sidebar .sidebar__form .sidebar__list {
+    background-color: white;
+}
+
+.sidebar .sidebar__form .sidebar__list .list {
+    list-style: none;
+    padding: 0;
+    border-left: 1px solid var(--silver);
+    border-right: 1px solid var(--silver);
+}
+
+.sidebar .sidebar__form .sidebar__list .list .list-item {
+    font-size: 1.6rem;
+    padding: 5px;
+    border-bottom: 1px solid var(--silver);
+}
+
+.sidebar .sidebar__form .sidebar__list .list .list-item:hover {
+    background-color: #0000000a;
+    cursor: pointer;
+}
+
+.sidebar .filter__form {
+    margin-bottom: 20px;
+    margin-right: 30px;
+    padding: 15px;
+    border: 1px solid var(--silver);
+    background-color: white;
+}
+
+.sidebar .filter__form .filter__title {
+    text-align: center;
+    padding: 2px;
+    border-bottom: 1px solid var(--silver);
+}
+
+.sidebar .filter__form .input-form .radio-group {
+    margin-top: 8px;
+}
+
+.sidebar .filter__form .input-form .radio-group label {
+    padding: 0 5px;
+    font-size: 1.4rem;
+}
+
+.product .product__title h4 {
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.product .product__list-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.product .product__list-item .item {
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    /* border: 1px solid var(--silver); */
+    text-decoration: none;
+}
+
+.product .product__list-item .item:hover {
+    cursor: pointer;
+    border: 1px solid var(--silver);
+}
+
+.product .product__list-item .item .item-image {
+    overflow: hidden;
+}
+
+.product .product__list-item .item .item-image img {
+    max-width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.product .product__list-item .item .item-image img:hover {
+    transform: scale(1.2);
+}
+
+.product .product__list-item .item .item-info .name {
+    padding: 0 10px;
+    font-size: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: black;
+}
+
+.product .product__list-item .item .item-info .price {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--bs-danger);
+}

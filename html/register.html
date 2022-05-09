@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../asset/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="https://kit.fontawesome.com/4764867ec8.js" crossorigin="anonymous"></script>
+    <script src="../asset/jquery/jquery-3.6.0.js"></script>
+    <title>Boss And Maid - Đăng ký</title>
+    <link rel="icon" href="../asset/image/icon.ico">
+    <script>
+        $(function() {
+            $("#header").load("./header.html")
+            $("#footer").load("./footer.html")
+        })
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="container">
+        <form action="" id="register-form">
+            <div class="title">
+                <h2>
+                    Đăng ký
+                </h2>
+                <a href="./logIn.html">
+                    Đăng nhập
+                </a>
+            </div>
+            <div class="input">
+                <div class="form-group">
+                    <label for="first-name">Tên</label> <br>
+                    <input type="text" id="first-name" placeholder="VD: Nam"> <br>
+                    <span class="form-message"></span>
+                </div>
+    
+                <div class="form-group">
+                    <label for="last-name">Họ</label> <br>
+                    <input type="text" id="last-name" placeholder="VD: Trần, Nguyễn Thị,..."> <br>
+                    <span class="form-message"></span>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email</label> <br>
+                    <input type="text" id="email" placeholder="VD: diepvienkhongthay@gmail.com"> <br>
+                    <span class="form-message"></span>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label> <br>
+                    <input type="password" id="password" placeholder="Nhập mật khẩu tại đây"> <br>
+                    <span class="form-message"></span>
+                </div>
+    
+                <div class="form-group">
+                    <label for="re-password">Nhập lại mật khẩu</label> <br>
+                    <input type="password" id="re-password" placeholder="Nhập lại mật khẩu"> <br>
+                    <span class="form-message"></span>
+                </div>
+            </div>
+            <div class="control">
+                <button type="submit" class="btn btn--primary">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="../JS/Validate.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        // Mong muốn của chúng ta
+            Validator({
+                form: '#register-form',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isRequired('#first-name', 'Vui lòng nhập tên của bạn'),
+                    Validator.isRequired('#last-name', 'Vui lòng nhập họ của bạn'),
+                    Validator.isRequired('#email', 'Vui lòng nhập email'),
+                    Validator.isEmail('#email'),
+                    Validator.isRequired('#password', 'Vui lòng nhập mật khẩu'),
+                    Validator.minLength('#password', 6),
+                    Validator.isRequired('#re-password', 'Vui lòng nhập lại mật khẩu'),
+                    Validator.isConfirmed('#re-password', function () {
+                    return document.querySelector('#register-form #password').value;
+                    }, 'Mật khẩu nhập lại không chính xác')
+                ],
+                onSubmit: function (data) {
+                    // Call API
+                    console.log(data);
+                }
+            })
+        })
+    </script>
+</body>
+</html>

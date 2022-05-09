@@ -1,0 +1,114 @@
+/* header */
+.header {
+    padding: 3px 40px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(0, #FF69B4, #FF1493);
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__top .header__top__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.header__top .header__top__list .list-item {
+    padding: 0 5px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.header__top .header__top__list .list-item a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .header__top .header__top__list .list-item:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+} */
+
+.header__top .header__top__list .list-item a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.no-hover {
+    cursor: text;
+    color: white;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__container .header__container__logo-nav .logo {
+    width: 100px;
+}
+
+.header__container .header__container__search-cart .search {
+    min-width: 600px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header__container .header__container__search-cart .search .search-input {
+    flex: 1;
+    height: 100%;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    padding: 0 8px;
+}
+
+.header__container .header__container__search-cart .search .search-button {
+    width: 50px;
+    height: 36px;
+    background-color: var(--primary-color);
+    margin-right: 2px;
+    border: none;
+    color: white;
+}
+
+.header__container .header__container__search-cart .search .search-button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.header__container .header__container__search-cart .cart i {
+    color: white;
+    font-size: 2.6rem;
+    margin: 0 40px;
+}
+
+.header__container .header__container__search-cart .cart i:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.header__container .header__container__logo-nav .nav {
+    justify-content: center;
+}
+
+.header__container .header__container__logo-nav .nav .nav-item {
+    text-decoration: none;
+    margin: 15px 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    min-width: 70px;
+    text-align: center;
+    color: white;
+}
+
+.header__container .header__container__logo-nav .nav .nav-item:hover {
+    color: var(--jelly-bean);
+}

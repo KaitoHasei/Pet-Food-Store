@@ -1,0 +1,83 @@
+#login-form {
+    width: 485px;
+    margin: 0 auto;
+    padding: 45px;
+    background-color: white;
+}
+
+#login-form .title {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-form .title h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#login-form .title a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#login-form .title a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#login-form .input .form-group {
+    margin-bottom: 15px;
+}
+
+#login-form .input .form-group label {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+#login-form .input .form-group input {
+    width: -webkit-fill-available;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 3px;
+    /* margin-bottom: 15px; */
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+#login-form .input .form-group.invalid input {
+    border-color: var(--radical-red);
+}
+
+#login-form .input .form-group input:focus-visible {
+    outline: var(--primary-color) 1px solid;
+}
+
+#login-form .input .form-group .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-form .input .form-group .form-message {
+    color: var(--radical-red);
+}
+
+#login-form .input .form-group .message a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+#login-form .input .form-group .message a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#login-form .control {
+    text-align: end;
+}

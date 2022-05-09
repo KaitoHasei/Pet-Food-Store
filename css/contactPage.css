@@ -1,0 +1,44 @@
+h1 {
+    margin-bottom: 15px;
+}
+
+.contact-page {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.5rem;
+}
+
+.form .form-group {
+    margin-bottom: 15px;
+}
+
+.form .form-group input {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.form .form-group textarea {
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.form .form-group input:focus-visible,
+textarea:focus-visible {
+    outline: var(--primary-color) 1px solid;
+}

@@ -1,0 +1,10 @@
+.footer {
+    margin-top: 30px;
+    background-color: var(--ebony-clay);
+    font-size: 1.4rem;
+    color: white;
+}
+
+.footer input {
+    font-size: 1.4rem;
+}

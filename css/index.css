@@ -1,0 +1,98 @@
+/* .product__wrapper.new-products .product__title {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.product__wrapper.new-products .product__title h3 {
+    background-color: var(--primary-color);
+}
+
+.product__wrapper.best-selling .product__title {
+    border-bottom: 2px solid var(--jelly-bean);
+}
+
+.product__wrapper.best-selling .product__title h3 {
+    background-color: var(--jelly-bean);
+}
+
+.product__wrapper.dog-food .product__title {
+    border-bottom: 2px solid var(--jelly-bean);
+}
+
+.product__wrapper.dog-food .product__title h3 {
+    background-color: var(--jelly-bean);
+}
+
+.product__wrapper.cat-food .product__title {
+    border-bottom: 2px solid var(--jelly-bean);
+}
+
+.product__wrapper.cat-food .product__title h3 {
+    background-color: var(--jelly-bean);
+} */
+
+.product__wrapper {
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.product__wrapper .product__title h3 {
+    width: fit-content;
+    padding: 10px;
+    color: var(--jelly-bean);
+    font-weight: bold;
+    margin: 0;
+}
+
+.product__wrapper .list__items {
+    background-color: white;
+    border-top: 0.5px solid var(--jelly-bean);
+}
+
+.product__wrapper .list__items .item {
+    /* border: 0.5px solid var(--silver); */
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.product__wrapper .list__items .item:hover {
+    cursor: pointer;
+    border: 1px solid var(--silver);
+}
+
+.product__wrapper .list__items 
+.item .item-image {
+    overflow: hidden;
+}
+
+.product__wrapper .list__items 
+.item .item-image img {
+    max-width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.product__wrapper .list__items 
+.item .item-image img:hover {
+    transform: scale(1.2);
+}
+
+.product__wrapper .list__items .item
+.item-info .name {
+    font-size: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: black;
+}
+
+.product__wrapper .list__items .item
+.item-info .price {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--bs-danger);
+}

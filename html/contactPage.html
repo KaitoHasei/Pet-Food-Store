@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../asset/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/contactPage.css">
+    <script src="https://kit.fontawesome.com/4764867ec8.js" crossorigin="anonymous"></script>
+    <script src="../asset/jquery/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("./header.html")
+            $("#footer").load("./footer.html")
+        })
+    </script>
+    <link rel="icon" href="../asset/image/icon.ico">
+    <title>Boss And Maid - Contact</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container contact-page">
+        <div class="content">
+            <h1>Liên hệ</h1>
+            <p>Boss And Maid shop xin chào quý khách hàng!</p>
+            <p>
+                Nhằm cải thiện chất lượng sản phẩm, cũng như là dịch vụ bên chúng tôi, chúng tôi luôn 
+                lắng nghe và quan tâm đến mong muốn và đánh giá của khách hàng về chất lượng dịch vụ,
+                sản phẩm bên chúng tôi. Nếu quý khách hàng có góp ý gì về chất lượng dịch vụ hay sản 
+                phẩm quý khách hàng có thể gửi góp ý bằng cách điền vào form đăng liên hệ ở bên dưới,
+                cửa hàng chúng tôi sẽ xem xét một cách nghiêm túc phản hồi của quý khách hàng.
+            </p>
+            <p>Xin cảm ơn quý khách hàng đã đến shop của chúng tôi.</p>
+        </div>
+        <div class="form">
+            <h1>Gửi ý kiến của bạn</h1>
+            <form action="" id="contact-form">
+                <div class="form-group col-md-6">
+                    <input type="text" id="first-name" placeholder="Họ tên"> <br>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" id="first-name" placeholder="Email"> <br>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" id="first-name" placeholder="Tiêu đề"> <br>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <textarea rows="4" cols="50" placeholder="Nội dung"></textarea> <br>
+                    <span class="form-message"></span>
+                </div>
+                <button class="btn btn--primary">Gửi</button>
+            </form>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../asset/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/cartPage.css">
+    <script src="https://kit.fontawesome.com/4764867ec8.js" crossorigin="anonymous"></script>
+    <script src="../asset/jquery/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("./header.html")
+            $("#footer").load("./footer.html")
+        })
+    </script>
+    <link rel="icon" href="../asset/image/icon.ico">
+    <title>Boss And Maid - Giỏ hàng</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="cart-page" class="container">
+        <div class="py-5 text-center">
+            <h1>Giỏ hàng của bạn</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-7 col-lg-6 order-md-last">
+                <h2 class="mb-3">Hàng của bạn</h2>
+                <ul id="cart-products" class="list-group mb-3 list-unstyled">
+                    <li class="mb-2">
+                        <div class="cart-product">
+                            <div class="cart-product__img-wrapper">
+                                <img src="//cdn.becungshop.vn/images/500x500/bo-thun-genax-va-quan-tui-kieu-cho-be-trai-p260788e85dc26-500x500.jpg" alt="">
+                            </div>
+                            <div class="cart-product__content">
+                                <div class="cart-product__name">
+                                    Bộ thun Genax và quần túi kiểu cho bé trai
+                                </div>
+                                <div class="cart-product__price">Đơn giá: 159,000đ</div>
+                                <div class="cart-product__quantity">Số lượng: 3</div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="mb-2">
+                        <div class="cart-product">
+                            <div class="cart-product__img-wrapper">
+                                <img src="//cdn.becungshop.vn/images/500x500/set-do-dui-ca-tinh-danh-cho-be-gai-p26147fe985d6c-500x500.jpg" alt="">
+                            </div>
+                            <div class="cart-product__content">
+                                <div class="cart-product__name">
+                                    Sét đồ đũi cá tính dành cho bé gái
+                                </div>
+                                <div class="cart-product__price">Đơn giá: 169,000đ</div>
+                                <div class="cart-product__quantity">Số lượng: 2</div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (VND)</span>
+                        <strong>2,114,000đ</strong>
+                    </li>
+                </ul>
+
+            <form class="card p-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Mã giảm giá">
+                    <button type="submit" class="btn btn--primary">
+                        Nhận mã
+                    </button>
+                </div>
+            </form>
+        </div>
+            <div class="col-md-5 col-lg-6">
+                <h2 class="mb-3">Địa chỉ nhận hàng</h2>
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                        <div class="col-sm-12">
+                            <label for="firstName" class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Địa chỉ</label>
+                            <input type="text" class="form-control" id="address" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                Vui lòng điền địa chỉ
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">Thành phố</label>
+                            <select class="form-select" id="country" required="">
+                                <option value="">Chọn...</option>
+                                <option>Hồ Chí Minh</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Vui lòng chọn thành phố
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <button class="w-100 btn btn--primary btn-lg" type="submit">
+                        Thanh toán
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script type="module" src="../JS/cartPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../asset/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://kit.fontawesome.com/4764867ec8.js" crossorigin="anonymous"></script>
+    <script src="../asset/jquery/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("./header.html")
+            $("#footer").load("./footer.html")
+        })
+    </script>
+    <link rel="icon" href="../asset/image/icon.ico">
+    <title>Boss And Maid - Trang chủ</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <div class="product__wrapper new-products">
+            <div class="product__title">
+                <h3>Sản phẩm mới</h3>
+            </div>
+            <div class="list__items d-flex flex-wrap"></div>
+        </div>
+        <div class="product__wrapper best-selling">
+            <div class="product__title">
+                <h3>Sản phẩm bán chạy</h3>
+            </div>
+            <div class="list__items d-flex flex-wrap"></div>
+        </div>
+        <div class="product__wrapper dog-food">
+            <div class="product__title">
+                <h3>Thức ăn cho chó</h3>
+            </div>
+            <div class="list__items d-flex flex-wrap"></div>
+        </div>
+        <div class="product__wrapper cat-food">
+            <div class="product__title">
+                <h3>Thức ăn cho mèo</h3>
+            </div>
+            <div class="list__items d-flex flex-wrap"></div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script type="module" src="../JS/index.js"></script>
+</body>
+</html>

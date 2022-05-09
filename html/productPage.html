@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../asset/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/productPage.css">
+    <script src="https://kit.fontawesome.com/4764867ec8.js" crossorigin="anonymous"></script>
+    <script src="../asset/jquery/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("./header.html")
+            $("#footer").load("./footer.html")
+        })
+    </script>
+    <title>Boss And Maid - Sản phẩm</title>
+    <link rel="icon" href="../asset/image/icon.ico">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container product-page">
+        <div class="sidebar col-left col-sm-3 col-xs-12 col-sm-pull-9  hidden-xs">
+            <div class="sidebar__form">
+                <div class="sidebar__title">
+                    <h4>Các sản phẩm</h4>
+                </div>
+                <div class="sidebar__list">
+                    <ul class="list">
+                        <li class="list-item" id="DOG">Thức ăn cho chó</li>
+                        <li class="list-item" id="CAT">Thức ăn cho mèo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="filter__form">
+                <div class="filter__title">
+                    <h4>Tìm theo các mức giá</h4>
+                </div>
+                <div class="input-form">
+                    <div class="radio-group">
+                        <input type="radio" name="price" id="price-low">
+                        <label for="price-low">0đ - 50000đ</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="price" id="price-medium">
+                        <label for="price-medium">50000đ - 200000đ</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="price" id="price-high">
+                        <label for="price-high">200000đ - 400000đ</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="price" id="price-highest">
+                        <label for="price-highest">400000đ - 1000000đ</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product__title"></div>
+            <div class="product__list-item"></div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script type="module" src="../JS/productPage.js"></script>
+</body>
+</html>
